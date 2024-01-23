@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to your custom CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="header">
+         <!-- Header Section -->
+        <section class="flex">
+    
+            <div id="menu-btn" class="fas fa-bars"></div>
+    
+        <a href="#" class="logo"> <span>Kachow</span>Sales</a>
+    
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+            </nav>
+    
+            <div id="login-btn">
+                <a href="login.html">
+                    <button class="btn">login</button>
+                </a>
+            </div>
+    
+        </section>
+    
+    </header> 
+
+    
+    <!-- Login Form Container -->
+    <div class="login-form-container">
+
+        <span id="close-login-form" class="fas fa-times"></span>
+    
+        <form action="logic.php" method="POST">
+            <h3>user login</h3>
+            <input type="text" name="username" placeholder="username" class="box">
+            <input type="password" name="password" placeholder="password" class="box">
+            <p> forget your password <a href="#">click here</a> </p>
+            <input type="submit" name="login" value="login" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn"> google </a>
+                <a href="#" class="btn"> facebook </a>
+            </div>
+            <p> don't have an account <a href="#">create one</a> </p>
+        </form>
+    
+    </div>
+
+     <!-- Registration Form Container -->
+    <div class="login-form-container">
+
+        <span id="close-login-form" class="fas fa-times"></span>
+    
+        <form action="logic.php" method="POST">
+            <h3>user Registration</h3>
+            <input type="text" name="name" placeholder="name" class="box">
+            <input type="text" name="address" placeholder="address" class="box">
+            <input type="number" name="number" placeholder="number" class="box">
+            <input type="email" name="email" placeholder="email" class="box">
+            <input type="text" name="username" placeholder="username" class="box">
+            <input type="password" name="password" placeholder="password" class="box">
+            <input type="submit" name="register" value="Register" class="btn">
+            
+        </form>
+    
+    </div>
+    <div class="login-form-container">
+
+        <span id="close-login-form" class="fas fa-times"></span>
+    
+        <form id="carregister" action="logic.php" method="POST">
+            <h3>Add a Car</h3>
+            <input type="number" name="sellerid" placeholder="seller ID" class="box">
+            <input type="number" name="make" placeholder="Make" class="box">
+            <input type="text" name="model" placeholder="Model" class="box">
+            <input type="number" name="year" placeholder="Year" class="box">
+            <input type="number" name="milage" placeholder="Milage" class="box">
+            <input type="text" name="location" placeholder="Location" class="box">
+            <input type="number" name="price" placeholder="price" class="box">
+            <input type="submit" name="carregister" value="Register" class="btn"> 
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
